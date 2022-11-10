@@ -20,7 +20,7 @@ def command():
         zadanie = r.recognize_google(audio).lower()
         print("Вы сказали: " + zadanie)
     except sr.UnknownValueError:
-        talk("Я вас не понял")
+        talk("Я вас не понял!")
         zadanie = command()
 
         return zadanie
